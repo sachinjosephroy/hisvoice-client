@@ -1,0 +1,33 @@
+<div class="comtact-page">
+    <div class="container">
+        <form id="contactForm" class="contact-container container" (ngSubmit)="createContact(playlistForm)" #playlistForm="ngForm">
+            <div class="is-error">
+                {{ receivedError }}
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="email" name="name" class="form-control" placeholder="Your Name" [(ngModel)]="contactUserData.name" required minlength="3" #nameInput="ngModel">
+                <div class="is-error" *ngIf="nameInput.touched && nameInput.invalid && nameInput.dirty">
+                    <p>Name is required and needs to be at least 3 characters long.</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Email</label>
+                <input oninput="this.value = this.value.toLowerCase()" type="email" name="email" class="form-control" placeholder="Your Email" [(ngModel)]="contactUserData.email" required email #emailInput="ngModel">
+
+                <div class="is-error" *ngIf="emailInput.touched && emailInput.invalid && emailInput.dirty">
+                    Needs to be a valid email.
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" aria-label="With textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="contactUserData.message" required #messageInput="ngModel"></textarea>
+
+                <div class="is-error" *ngIf="messageInput.touched && messageInput.invalid && messageInput.dirty">
+                    Your message is required!
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!playlistForm.form.valid">Submit</button>
+        </form>
+    </div>
+</div>

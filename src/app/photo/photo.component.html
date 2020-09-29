@@ -1,0 +1,29 @@
+<div class="image-page">
+    <div class="row">
+        <!-- <div class="col-2 caption-row">
+            <span id="caption">
+              {{image.caption}}
+            </span>
+        </div> -->
+        <div class=col-12 pt-0>
+            <div [ngStyle]="{'background-image':'url('+ image.url +')'}" class="img-container paper responsive">
+            </div>
+        </div>
+        <div class="col-md-12 caption-row">
+            <span id="caption">
+              {{image.caption}}
+            </span>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 caption-row">
+            <!-- <span id="caption">
+              {{image.caption}}
+            </span> -->
+            <div class="col align-self-center">
+                <button (click)="goBack()">Go Back To All Photos</button>
+            </div>
+        </div>
+    </div>
+</div>

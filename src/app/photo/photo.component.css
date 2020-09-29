@@ -1,0 +1,54 @@
+.image-page {
+    /* background-color: red; */
+    /* background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%, rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%, rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%, rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%, rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%); */
+    background-image: repeating-linear-gradient(135deg, rgba(6, 6, 6, 0.08) 0px, rgba(6, 6, 6, 0.08) 36px, rgba(0, 0, 0, 0.08) 36px, rgba(0, 0, 0, 0.08) 83px, rgba(70, 70, 70, 0.08) 83px, rgba(70, 70, 70, 0.08) 115px, rgba(147, 147, 147, 0.08) 115px, rgba(147, 147, 147, 0.08) 150px, rgba(142, 142, 142, 0.08) 150px, rgba(142, 142, 142, 0.08) 182px), repeating-linear-gradient(135deg, rgba(71, 71, 71, 0.08) 0px, rgba(71, 71, 71, 0.08) 32px, rgba(184, 184, 184, 0.08) 32px, rgba(184, 184, 184, 0.08) 78px, rgba(122, 122, 122, 0.08) 78px, rgba(122, 122, 122, 0.08) 99px, rgba(245, 245, 245, 0.08) 99px, rgba(245, 245, 245, 0.08) 117px, rgba(23, 23, 23, 0.08) 117px, rgba(23, 23, 23, 0.08) 127px), repeating-linear-gradient(135deg, rgba(79, 79, 79, 0.08) 0px, rgba(79, 79, 79, 0.08) 129px, rgba(249, 249, 249, 0.08) 129px, rgba(249, 249, 249, 0.08) 220px, rgba(120, 120, 120, 0.08) 220px, rgba(120, 120, 120, 0.08) 327px, rgba(52, 52, 52, 0.08) 327px, rgba(52, 52, 52, 0.08) 445px, rgba(230, 230, 230, 0.08) 445px, rgba(230, 230, 230, 0.08) 520px), repeating-linear-gradient(135deg, rgba(72, 72, 72, 0.08) 0px, rgba(72, 72, 72, 0.08) 50px, rgba(86, 86, 86, 0.08) 50px, rgba(86, 86, 86, 0.08) 171px, rgba(231, 231, 231, 0.08) 171px, rgba(231, 231, 231, 0.08) 270px, rgba(245, 245, 245, 0.08) 270px, rgba(245, 245, 245, 0.08) 326px, rgba(123, 123, 123, 0.08) 326px, rgba(123, 123, 123, 0.08) 458px), linear-gradient(90deg, rgb(155, 34, 101), rgb(255, 18, 198));
+    height: 120vh;
+}
+
+.img-container {
+    margin: 10px auto;
+    box-shadow: #555 1px 2px 8px 1px;
+    min-height: 560px;
+    width: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+}
+
+.figure-caption {
+    font-size: 90%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#caption {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    color: #222;
+    background-color: #f5f5f5;
+    border: 1px solid #bbb;
+    width: 900px;
+}
+
+.caption-row {
+    padding: 24px;
+    text-align: center;
+}
+
+.resize {
+    width: 540px;
+    /* you can use % */
+    height: auto;
+}
+
+@media screen and (max-width: 950px) {
+    .responsive {
+        max-width: 375px;
+        min-height: 500px;
+    }
+}

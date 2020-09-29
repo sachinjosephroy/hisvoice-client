@@ -1,0 +1,33 @@
+.song-page {
+    background-image: repeating-linear-gradient(135deg, rgba(6, 6, 6, 0.08) 0px, rgba(6, 6, 6, 0.08) 36px, rgba(0, 0, 0, 0.08) 36px, rgba(0, 0, 0, 0.08) 83px, rgba(70, 70, 70, 0.08) 83px, rgba(70, 70, 70, 0.08) 115px, rgba(147, 147, 147, 0.08) 115px, rgba(147, 147, 147, 0.08) 150px, rgba(142, 142, 142, 0.08) 150px, rgba(142, 142, 142, 0.08) 182px), repeating-linear-gradient(135deg, rgba(71, 71, 71, 0.08) 0px, rgba(71, 71, 71, 0.08) 32px, rgba(184, 184, 184, 0.08) 32px, rgba(184, 184, 184, 0.08) 78px, rgba(122, 122, 122, 0.08) 78px, rgba(122, 122, 122, 0.08) 99px, rgba(245, 245, 245, 0.08) 99px, rgba(245, 245, 245, 0.08) 117px, rgba(23, 23, 23, 0.08) 117px, rgba(23, 23, 23, 0.08) 127px), repeating-linear-gradient(135deg, rgba(79, 79, 79, 0.08) 0px, rgba(79, 79, 79, 0.08) 129px, rgba(249, 249, 249, 0.08) 129px, rgba(249, 249, 249, 0.08) 220px, rgba(120, 120, 120, 0.08) 220px, rgba(120, 120, 120, 0.08) 327px, rgba(52, 52, 52, 0.08) 327px, rgba(52, 52, 52, 0.08) 445px, rgba(230, 230, 230, 0.08) 445px, rgba(230, 230, 230, 0.08) 520px), repeating-linear-gradient(135deg, rgba(72, 72, 72, 0.08) 0px, rgba(72, 72, 72, 0.08) 50px, rgba(86, 86, 86, 0.08) 50px, rgba(86, 86, 86, 0.08) 171px, rgba(231, 231, 231, 0.08) 171px, rgba(231, 231, 231, 0.08) 270px, rgba(245, 245, 245, 0.08) 270px, rgba(245, 245, 245, 0.08) 326px, rgba(123, 123, 123, 0.08) 326px, rgba(123, 123, 123, 0.08) 458px), linear-gradient(90deg, rgb(155, 34, 101), rgb(255, 18, 198));
+    height: 100vh;
+    margin-top: 0px;
+}
+
+.video {
+    width: 700px;
+    height: 400px;
+    margin: 30px auto;
+    border: 3px solid #888888;
+}
+
+.text>h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-size: 35px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    /* border: 3px solid green; */
+}
+
+.clr {
+    background-color: rgb(40, 37, 216);
+    color: white;
+}

@@ -1,0 +1,68 @@
+.song-page {
+    /* background-image: repeating-linear-gradient(135deg, rgba(9, 9, 9, 0.08) 0px, rgba(9, 9, 9, 0.08) 49px, rgba(50, 50, 50, 0.08) 49px, rgba(50, 50, 50, 0.08) 59px, rgba(80, 80, 80, 0.08) 59px, rgba(80, 80, 80, 0.08) 72px, rgba(73, 73, 73, 0.08) 72px, rgba(73, 73, 73, 0.08) 82px, rgba(100, 100, 100, 0.08) 82px, rgba(100, 100, 100, 0.08) 92px), repeating-linear-gradient(135deg, rgba(211, 211, 211, 0.08) 0px, rgba(211, 211, 211, 0.08) 44px, rgba(204, 204, 204, 0.08) 44px, rgba(204, 204, 204, 0.08) 67px, rgba(14, 14, 14, 0.08) 67px, rgba(14, 14, 14, 0.08) 86px, rgba(53, 53, 53, 0.08) 86px, rgba(53, 53, 53, 0.08) 127px, rgba(224, 224, 224, 0.08) 127px, rgba(224, 224, 224, 0.08) 166px), repeating-linear-gradient(135deg, rgba(120, 120, 120, 0.08) 0px, rgba(120, 120, 120, 0.08) 117px, rgba(203, 203, 203, 0.08) 117px, rgba(203, 203, 203, 0.08) 180px, rgba(47, 47, 47, 0.08) 180px, rgba(47, 47, 47, 0.08) 322px, rgba(9, 9, 9, 0.08) 322px, rgba(9, 9, 9, 0.08) 428px, rgba(238, 238, 238, 0.08) 428px, rgba(238, 238, 238, 0.08) 487px), repeating-linear-gradient(135deg, rgba(147, 147, 147, 0.08) 0px, rgba(147, 147, 147, 0.08) 100px, rgba(60, 60, 60, 0.08) 100px, rgba(60, 60, 60, 0.08) 231px, rgba(68, 68, 68, 0.08) 231px, rgba(68, 68, 68, 0.08) 344px, rgba(104, 104, 104, 0.08) 344px, rgba(104, 104, 104, 0.08) 442px, rgba(229, 229, 229, 0.08) 442px, rgba(229, 229, 229, 0.08) 567px), linear-gradient(90deg, rgb(238, 207, 33), rgb(214, 142, 8)); */
+    background-color: #00728f;
+    background-image: url("https://www.transparenttextures.com/patterns/tileable-wood-colored.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    height: 100vh;
+    margin-top: 0px;
+}
+
+.inside {
+    margin-top: 20px;
+}
+
+.video {
+    width: 700px;
+    height: 400px;
+    margin: 30px auto;
+    border: 3px solid #888888;
+}
+
+.text>h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-size: 35px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    /* border: 3px solid green; */
+}
+
+.clr {
+    background-color: rgb(40, 37, 216);
+    color: white;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 0.7em 1.7em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #a24dcc;
+    box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+    text-align: center;
+    position: relative;
+    width: 350px;
+    border-radius: 5%;
+    background-image: repeating-linear-gradient(135deg, rgba(244, 244, 244, 0.06) 0px, rgba(244, 244, 244, 0.06) 46px, rgba(92, 92, 92, 0.06) 46px, rgba(92, 92, 92, 0.06) 79px, rgba(208, 208, 208, 0.06) 79px, rgba(208, 208, 208, 0.06) 119px, rgba(87, 87, 87, 0.06) 119px, rgba(87, 87, 87, 0.06) 162px, rgba(8, 8, 8, 0.06) 162px, rgba(8, 8, 8, 0.06) 187px, rgba(206, 206, 206, 0.06) 187px, rgba(206, 206, 206, 0.06) 211px, rgba(183, 183, 183, 0.06) 211px, rgba(183, 183, 183, 0.06) 247px, rgba(21, 21, 21, 0.06) 247px, rgba(21, 21, 21, 0.06) 288px), repeating-linear-gradient(135deg, rgba(148, 148, 148, 0.06) 0px, rgba(148, 148, 148, 0.06) 28px, rgba(104, 104, 104, 0.06) 28px, rgba(104, 104, 104, 0.06) 58px, rgba(236, 236, 236, 0.06) 58px, rgba(236, 236, 236, 0.06) 101px, rgba(245, 245, 245, 0.06) 101px, rgba(245, 245, 245, 0.06) 128px, rgba(104, 104, 104, 0.06) 128px, rgba(104, 104, 104, 0.06) 167px, rgba(90, 90, 90, 0.06) 167px, rgba(90, 90, 90, 0.06) 216px, rgba(31, 31, 31, 0.06) 216px, rgba(31, 31, 31, 0.06) 260px, rgba(25, 25, 25, 0.06) 260px, rgba(25, 25, 25, 0.06) 305px), repeating-linear-gradient(135deg, rgba(221, 221, 221, 0.06) 0px, rgba(221, 221, 221, 0.06) 20px, rgba(154, 154, 154, 0.06) 20px, rgba(154, 154, 154, 0.06) 66px, rgba(60, 60, 60, 0.06) 66px, rgba(60, 60, 60, 0.06) 88px, rgba(170, 170, 170, 0.06) 88px, rgba(170, 170, 170, 0.06) 115px, rgba(241, 241, 241, 0.06) 115px, rgba(241, 241, 241, 0.06) 131px, rgba(99, 99, 99, 0.06) 131px, rgba(99, 99, 99, 0.06) 147px, rgba(203, 203, 203, 0.06) 147px, rgba(203, 203, 203, 0.06) 193px, rgba(83, 83, 83, 0.06) 193px, rgba(83, 83, 83, 0.06) 204px), linear-gradient(90deg, rgb(248, 8, 31), rgb(88, 39, 62));
+    border-color: turquoise;
+    /* height: 10px; */
+    /* background: url("../../assets/img/canyon.jpg") no-repeat scroll 0 0 transparent; */
+}
+
+.button1:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    transform: scale(1.1);
+}

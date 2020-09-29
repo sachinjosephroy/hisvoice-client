@@ -1,0 +1,48 @@
+<nav class="navbar bg-light navbar-light navbar-expand-lg">
+    <div class="container">
+        <a href="" routerLink="/home" class=" navbar-brand "><img src="../../assets/image/logo.png" alt="Logo " title="Logo "></a>
+
+        <button (click)="toggleCollapsed()" class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarResponsive ">
+            <span class="navbar-toggler-icon "></span> 
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarResponsive" [class]="{'collapse': collapsed, 'navbar-collapse': true}">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a href=" " routerLink="/home" class="nav-link active">Home</a>
+                </li>
+                <li class=" nav-item ">
+                    <a href=" " routerLink="/about" class="nav-link ">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a href=" " routerLink="/contact" class="nav-link ">Contact</a>
+                </li>
+                <li class="nav-item ">
+                    <a href=" " routerLink="/gallery" class="nav-link ">Photos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Video Album
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" routerLink="/hisvoice-malayalam">Malayalam Songs</a>
+                        <a class="dropdown-item" href="#" routerLink="/paithalaam">Paithalaam Yeshuve</a>
+                        <a class="dropdown-item" href="#" routerLink="/goin-to-bethlehem">Goin' To Bethlehem</a>
+                        <a class="dropdown-item" href="#" routerLink="/video">Other Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a href=" " routerLink="/login" class="nav-link ">Login</a>
+                </li>
+                <li class="nav-item ">
+                    <a href=" " routerLink="/register" class="nav-link ">Register</a>
+                </li>
+                <li class="nav-item ">
+                    <a href=" " routerLink="/message" class="nav-link ">Messages</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
