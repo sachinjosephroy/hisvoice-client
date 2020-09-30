@@ -24,6 +24,8 @@ import { VideoHisvoiceEnglishComponent } from './video-hisvoice-english/video-hi
 import { VideoGoinToBethlehemComponent } from './video-goin-to-bethlehem/video-goin-to-bethlehem.component';
 import { VideoPaithalaamYeshuveComponent } from './video-paithalaam-yeshuve/video-paithalaam-yeshuve.component';
 import { VideoHisvoiceMalayalamComponent } from './video-hisvoice-malayalam/video-hisvoice-malayalam.component';
+import { VideoOSacredHeadComponent } from './video-o-sacred-head/video-o-sacred-head.component';
+import { VideoYeshuKristhuUyirthuComponent } from './video-yeshu-kristhu-uyirthu/video-yeshu-kristhu-uyirthu.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { VideoHisvoiceMalayalamComponent } from './video-hisvoice-malayalam/vide
     VideoHisvoiceEnglishComponent,
     VideoGoinToBethlehemComponent,
     VideoPaithalaamYeshuveComponent,
-    VideoHisvoiceMalayalamComponent
+    VideoHisvoiceMalayalamComponent,
+    VideoOSacredHeadComponent,
+    VideoYeshuKristhuUyirthuComponent
   ],
   imports: [
     BrowserModule,

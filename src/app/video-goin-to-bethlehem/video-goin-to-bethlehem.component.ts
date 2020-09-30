@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-video-goin-to-bethlehem',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoGoinToBethlehemComponent implements OnInit {
 
-  constructor() { }
+  goinToBethlehem;
+
+  constructor(private _sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
+    this.goinToBethlehem = this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/G0eKzSVkYaw?autoplay=1');
   }
 
 }
