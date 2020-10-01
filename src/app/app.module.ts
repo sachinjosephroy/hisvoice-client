@@ -17,6 +17,7 @@ import { PhotoComponent } from './photo/photo.component';
 import { ImageService } from './sharedservice/image.service';
 import { ImageFilterPipe } from './sharedservice/filter.pipe';
 import { ContactService } from './sharedservice/contact.service';
+import { RegisterService } from './sharedservice/register.service';
 
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,6 +27,8 @@ import { VideoPaithalaamYeshuveComponent } from './video-paithalaam-yeshuve/vide
 import { VideoHisvoiceMalayalamComponent } from './video-hisvoice-malayalam/video-hisvoice-malayalam.component';
 import { VideoOSacredHeadComponent } from './video-o-sacred-head/video-o-sacred-head.component';
 import { VideoYeshuKristhuUyirthuComponent } from './video-yeshu-kristhu-uyirthu/video-yeshu-kristhu-uyirthu.component';
+import { VideoMaruvinuMazhayaiComponent } from './video-maruvinu-mazhayai/video-maruvinu-mazhayai.component';
+import { VideoRingChristmasBellsComponent } from './video-ring-christmas-bells/video-ring-christmas-bells.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,9 @@ import { VideoYeshuKristhuUyirthuComponent } from './video-yeshu-kristhu-uyirthu
     VideoPaithalaamYeshuveComponent,
     VideoHisvoiceMalayalamComponent,
     VideoOSacredHeadComponent,
-    VideoYeshuKristhuUyirthuComponent
+    VideoYeshuKristhuUyirthuComponent,
+    VideoMaruvinuMazhayaiComponent,
+    VideoRingChristmasBellsComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +62,8 @@ import { VideoYeshuKristhuUyirthuComponent } from './video-yeshu-kristhu-uyirthu
   providers: [
     ImageService,
     ImageFilterPipe,
-    ContactService
+    ContactService,
+    RegisterService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegisterService } from '../sharedservice/register.service';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +10,20 @@ export class HeaderComponent implements OnInit {
 
   collapsed = true;
 
-  constructor() { }
+  constructor(public registerService: RegisterService) { }
 
-  ngOnInit(): void {
+  isLoggedIn: boolean = false;
+
+  ngOnInit() {
+    this.loggedIn();
   }
 
   toggleCollapsed(): void {
     this.collapsed = !this.collapsed;
+  }
+
+  loggedIn() {
+    console.log(this.registerService.loggedIn());
   }
 
 }
