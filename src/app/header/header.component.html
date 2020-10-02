@@ -29,16 +29,16 @@
                     </div>
                 </li>
                 <li class="nav-item ">
-                    <a href=" " routerLink="/contact" class="nav-link ">Contact</a>
+                    <a href=" " routerLink="/contact" *ngIf="!registerService.loggedIn()" class="nav-link ">Contact</a>
                 </li>
                 <li class="nav-item ">
-                    <a href=" " routerLink="/login" *!ngIf="registerService.loggedIn()" class="nav-link ">Login</a>
+                    <a href=" " routerLink="/login" *ngIf="!registerService.loggedIn()" class="nav-link ">Login</a>
                 </li>
                 <li class="nav-item ">
                     <a href=" " routerLink="/register" *ngIf="registerService.loggedIn()" class="nav-link ">Register</a>
                 </li>
                 <li class="nav-item ">
-                    <a href=" " routerLink="/message" *ngIf="registerService.loggedIn()" class="nav-link ">Messages</a>
+                    <a href=" " routerLink="/contacts" *ngIf="registerService.loggedIn()" class="nav-link ">Messages</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="" *ngIf="registerService.loggedIn()" (click)="registerService.logoutUser()">Logout</a>

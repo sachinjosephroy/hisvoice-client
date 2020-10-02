@@ -1,0 +1,22 @@
+<div class="hero">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">EMAIL</th>
+                    <th scope="col">MESSAGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contact of Contacts">
+                    <td>{{contact.id}}</td>
+                    <td>{{contact.name}}</td>
+                    <td>{{contact.email}}</td>
+                    <td>{{contact.message}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

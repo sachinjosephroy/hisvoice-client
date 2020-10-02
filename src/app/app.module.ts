@@ -20,7 +20,8 @@ import { ContactService } from './sharedservice/contact.service';
 import { RegisterService } from './sharedservice/register.service';
 
 import { FormsModule }   from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptorService } from './sharedservice/token-interceptor.service';
 import { VideoHisvoiceEnglishComponent } from './video-hisvoice-english/video-hisvoice-english.component';
 import { VideoGoinToBethlehemComponent } from './video-goin-to-bethlehem/video-goin-to-bethlehem.component';
 import { VideoPaithalaamYeshuveComponent } from './video-paithalaam-yeshuve/video-paithalaam-yeshuve.component';
@@ -29,6 +30,9 @@ import { VideoOSacredHeadComponent } from './video-o-sacred-head/video-o-sacred-
 import { VideoYeshuKristhuUyirthuComponent } from './video-yeshu-kristhu-uyirthu/video-yeshu-kristhu-uyirthu.component';
 import { VideoMaruvinuMazhayaiComponent } from './video-maruvinu-mazhayai/video-maruvinu-mazhayai.component';
 import { VideoRingChristmasBellsComponent } from './video-ring-christmas-bells/video-ring-christmas-bells.component';
+import { RetrieveContactsComponent } from './retrieve-contacts/retrieve-contacts.component';
+import { VideoBlessedAssuranceComponent } from './video-blessed-assurance/video-blessed-assurance.component';
+import { VideoYeshuvilEnThozhaneKandenComponent } from './video-yeshuvil-en-thozhane-kanden/video-yeshuvil-en-thozhane-kanden.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,10 @@ import { VideoRingChristmasBellsComponent } from './video-ring-christmas-bells/v
     VideoOSacredHeadComponent,
     VideoYeshuKristhuUyirthuComponent,
     VideoMaruvinuMazhayaiComponent,
-    VideoRingChristmasBellsComponent
+    VideoRingChristmasBellsComponent,
+    RetrieveContactsComponent,
+    VideoBlessedAssuranceComponent,
+    VideoYeshuvilEnThozhaneKandenComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +70,12 @@ import { VideoRingChristmasBellsComponent } from './video-ring-christmas-bells/v
     ImageService,
     ImageFilterPipe,
     ContactService,
-    RegisterService
+    RegisterService,
+    {
+      provide: HTTP_INTERCEPTORS, 
+      useClass: TokenInterceptorService,
+      multi: true
+  }
   ],
   bootstrap: [AppComponent]
 })
