@@ -33,6 +33,16 @@ import { VideoRingChristmasBellsComponent } from './video-ring-christmas-bells/v
 import { RetrieveContactsComponent } from './retrieve-contacts/retrieve-contacts.component';
 import { VideoBlessedAssuranceComponent } from './video-blessed-assurance/video-blessed-assurance.component';
 import { VideoYeshuvilEnThozhaneKandenComponent } from './video-yeshuvil-en-thozhane-kanden/video-yeshuvil-en-thozhane-kanden.component';
+import { MembersComponent } from './members/members.component';
+import { AdminMembersComponent } from './admin-members/admin-members.component';
+import { AdminMembersService } from './sharedservice/admin-members.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { AudioComponent } from './audio/audio.component';
+import { EventsComponent } from './events/events.component';
+import { AdminEventsComponent } from './admin-events/admin-events.component';
+import { EventService } from './sharedservice/event.service';
 
 @NgModule({
   declarations: [
@@ -58,19 +68,29 @@ import { VideoYeshuvilEnThozhaneKandenComponent } from './video-yeshuvil-en-thoz
     VideoRingChristmasBellsComponent,
     RetrieveContactsComponent,
     VideoBlessedAssuranceComponent,
-    VideoYeshuvilEnThozhaneKandenComponent
+    VideoYeshuvilEnThozhaneKandenComponent,
+    MembersComponent,
+    AdminMembersComponent,
+    AudioComponent,
+    EventsComponent,
+    AdminEventsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    NgxAudioPlayerModule
   ],
   providers: [
     ImageService,
     ImageFilterPipe,
     ContactService,
     RegisterService,
+    AdminMembersService,
+    EventService,
     {
       provide: HTTP_INTERCEPTORS, 
       useClass: TokenInterceptorService,

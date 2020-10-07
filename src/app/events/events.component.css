@@ -1,0 +1,19 @@
+.sach-card {
+    background-color: rgb(0, 153, 255);
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 100;
+    font-variant: petite-caps;
+}
+
+.sach-card-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: auto;
+}
+
+.sach-card-text {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: auto;
+}

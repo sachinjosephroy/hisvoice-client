@@ -10,6 +10,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MessageComponent } from './message/message.component';
 import { PhotoComponent } from './photo/photo.component';
+import { MembersComponent } from './members/members.component';
+import { AdminMembersComponent } from './admin-members/admin-members.component';
+import { AudioComponent } from './audio/audio.component';
+import { EventsComponent } from './events/events.component';
+import { AdminEventsComponent } from './admin-events/admin-events.component';
 
 import { VideoHisvoiceMalayalamComponent } from './video-hisvoice-malayalam/video-hisvoice-malayalam.component';
 import { VideoHisvoiceEnglishComponent } from './video-hisvoice-english/video-hisvoice-english.component';
@@ -29,9 +34,14 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'contacts', component: RetrieveContactsComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'members', component: MembersComponent },
+  { path: 'audio', component: AudioComponent },
+  { path: 'admin-members', component: AdminMembersComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'message', component: MessageComponent },
+  { path: 'events', component: EventsComponent },
+  { path: 'admin-events', component: AdminEventsComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'photo/:id', component: PhotoComponent },
   { path: 'hisvoice-malayalam', component: VideoHisvoiceMalayalamComponent },

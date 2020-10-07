@@ -1,0 +1,93 @@
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <span class="anchor" id="formLogin"></span>
+
+            <!-- form card login -->
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h3 class="mb-0">Add Members</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="uname1">Soprano</label>
+                            <input type="text" [(ngModel)]="sopranoData.name" name="name" class="form-control rounded-0" required>
+                        </div>
+                        <button type="button" (click)="createSoprano()" class="btn btn-primary float-right">Submit</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="uname1">Alto</label>
+                            <input type="text" [(ngModel)]="altoData.name" name="name" class="form-control rounded-0" required>
+                        </div>
+                        <button type="button" (click)="createAlto()" class="btn btn-primary float-right">Submit</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="uname1">Tenor</label>
+                            <input type="text" [(ngModel)]="tenorData.name" name="name" class="form-control rounded-0" required>
+                        </div>
+                        <button type="button" (click)="createTenor()" class="btn btn-primary float-right">Submit</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="uname1">Bass</label>
+                            <input type="text" [(ngModel)]="bassData.name" name="name" class="form-control rounded-0" required>
+                        </div>
+                        <button type="button" (click)="createBass()" class="btn btn-primary float-right">Submit</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="uname1">Former Member</label>
+                            <input type="text" [(ngModel)]="formerMemberData.name" name="name" class="form-control rounded-0" required>
+                        </div>
+                        <button type="button" (click)="createBass()" class="btn btn-primary float-right">Submit</button>
+                    </form>
+                </div>
+                <!--/card-block-->
+            </div>
+            <!-- /form card login -->
+            <!-- form card login -->
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h3 class="mb-0">Add Former Members</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="uname1">Name</label>
+                            <input type="text" [(ngModel)]="formerMemberData.name" name="name" class="form-control rounded-0" required>
+                            <label for="uname1">Church Name</label>
+                            <!-- <input type="text" [(ngModel)]="formerMemberData.church_name" name="name" class="form-control rounded-0" required> -->
+                            <select [(ngModel)]="formerMemberData.church_name" name="name" class="custom-select custom-select-sm">
+                                <option selected>Open this select menu</option>
+                                <option value="The CSI Jubilee Memorial Church of New York">The CSI Jubilee Memorial Church of New York</option>
+                                <option value="Church of South India Malayalam Congregation of Greater NY">Church of South India Malayalam Congregation of Greater NY</option>
+                                <option value="St. John’s Mar Thoma Church, Queens Village, NY">St. John’s Mar Thoma Church, Queens Village, NY</option>
+                              </select>
+                            <label for="uname1">Years Active (From)</label>
+                            <input type="text" [(ngModel)]="formerMemberData.years_active_from" name="name" class="form-control rounded-0" required>
+                            <label for="uname1">Years Active (To)</label>
+                            <input type="text" [(ngModel)]="formerMemberData.years_active_to" name="name" class="form-control rounded-0" required>
+                        </div>
+                        <button type="button" (click)="createFormerMember()" class="btn btn-primary float-right">Submit</button>
+                    </form>
+                </div>
+                <!--/card-block-->
+            </div>
+            <!-- /form card login -->
+
+        </div>
+
+
+    </div>
+</div>
