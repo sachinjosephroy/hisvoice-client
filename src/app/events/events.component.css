@@ -17,3 +17,15 @@
     text-transform: uppercase;
     font-family: auto;
 }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.right .card-text {
+    text-align: right;
+}

@@ -8,7 +8,7 @@
                 HIS' Voice Concert 2020
             </div>
             <div class="card-body">
-                <p class="card-title">This has been postponed indefinitely due to the covid 19 pandemic</p>
+                <p class="card-title">This event has been postponed indefinitely due to the covid 19 pandemic</p>
             </div>
         </div>
         <div class="card col-md-12 my-2 pt-3 sach-card">
@@ -19,11 +19,16 @@
                 {{ event.id }}) {{ event.name_of_event }}
             </div>
             <div class="card-body">
-                <p class="card-title sach-card-title">{{ event.day_of_week }}</p>
-                <p class="card-text sach-card-text mt-0">{{ event.date }}</p>
-                <p class="card-text">Time: {{ event.time }}</p>
-                <p class="card-text">Location: {{ event.venue_name }}</p>
-                <p class="card-text">Address: {{ event.venue_address_1 }}, {{ event.venue_address_2 }}</p>
+                <div class="left">
+                    <p class="card-title sach-card-title">{{ event.day_of_week }}</p>
+                    <p class="card-text sach-card-text mt-0">{{ event.date }}</p>
+                    <p class="card-text">Time: {{ event.time }}</p>
+                </div>
+                <div class="right">
+                    <p class="card-text">{{ event.venue_name }}</p>
+                    <p class="card-text">{{ event.venue_address_1 }}</p>
+                    <p class="card-text">{{ event.venue_address_2 }}</p>
+                </div>
             </div>
         </div>
     </div>
