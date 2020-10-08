@@ -43,6 +43,7 @@ import { AudioComponent } from './audio/audio.component';
 import { EventsComponent } from './events/events.component';
 import { AdminEventsComponent } from './admin-events/admin-events.component';
 import { EventService } from './sharedservice/event.service';
+import { SchedulerComponent } from './scheduler/scheduler.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { EventService } from './sharedservice/event.service';
     AdminMembersComponent,
     AudioComponent,
     EventsComponent,
-    AdminEventsComponent
+    AdminEventsComponent,
+    SchedulerComponent
   ],
   imports: [
     BrowserModule,

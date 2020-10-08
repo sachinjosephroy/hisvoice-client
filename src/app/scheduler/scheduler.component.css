@@ -1,0 +1,29 @@
+li {
+    list-style-type: none;
+    font-variant: small-caps;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 1.5;
+    ;
+}
+
+h1 {
+    /* border: 2px solid red; */
+    color: white;
+    background-color: #0f64d5;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-variant: petite-caps;
+}
+
+.fa-headphones {
+    color: #0d54b1!important;
+}
+
+@media only screen and (max-width: 600px) {
+    li {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+}
