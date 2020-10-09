@@ -44,6 +44,16 @@ import { EventsComponent } from './events/events.component';
 import { AdminEventsComponent } from './admin-events/admin-events.component';
 import { EventService } from './sharedservice/event.service';
 import { SchedulerComponent } from './scheduler/scheduler.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
+import interactionPlugin from '@fullcalendar/interaction';
+import { AuditionComponent } from './audition/audition.component'; // a plugin
+
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+  interactionPlugin
+]);
 
 @NgModule({
   declarations: [
@@ -75,7 +85,9 @@ import { SchedulerComponent } from './scheduler/scheduler.component';
     AudioComponent,
     EventsComponent,
     AdminEventsComponent,
-    SchedulerComponent
+    SchedulerComponent,
+    CalendarComponent,
+    AuditionComponent
   ],
   imports: [
     BrowserModule,
@@ -84,7 +96,8 @@ import { SchedulerComponent } from './scheduler/scheduler.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    NgxAudioPlayerModule
+    NgxAudioPlayerModule,
+    FullCalendarModule
   ],
   providers: [
     ImageService,

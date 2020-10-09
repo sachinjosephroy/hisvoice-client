@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row mt-4 sach-margin">
+        <div>
+            <a href="" routerLink="/schedule" class="mr-2">List View</a>
+            <span class="sach-divider"></span>
+            <a href="" routerLink="/calendar" class="ml-2">Calendar View</a>
+        </div>
+    </div>
+    <div>
+        <!-- <button (click)="toggleWeekends()">toggle weekends</button> -->
+        <full-calendar [options]="calendarOptions" class="mt-2"></full-calendar>
+    </div>
+</div>

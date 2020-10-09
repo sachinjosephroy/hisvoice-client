@@ -16,6 +16,8 @@ import { AudioComponent } from './audio/audio.component';
 import { EventsComponent } from './events/events.component';
 import { AdminEventsComponent } from './admin-events/admin-events.component';
 import { SchedulerComponent } from './scheduler/scheduler.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { AuditionComponent } from './audition/audition.component';
 
 import { VideoHisvoiceMalayalamComponent } from './video-hisvoice-malayalam/video-hisvoice-malayalam.component';
 import { VideoHisvoiceEnglishComponent } from './video-hisvoice-english/video-hisvoice-english.component';
@@ -44,6 +46,8 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent },
   { path: 'admin-events', component: AdminEventsComponent },
   { path: 'schedule', component: SchedulerComponent },
+  { path: 'calendar', component: CalendarComponent },
+  { path: 'audition', component: AuditionComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'photo/:id', component: PhotoComponent },
   { path: 'hisvoice-malayalam', component: VideoHisvoiceMalayalamComponent },
